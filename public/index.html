@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Jason Goossens" />
+    <meta
+      name="keywords"
+      content="portfolio, Jason Goossens, web developer, front-end"
+    />
+    <meta name="description" content="Jason Goossens' portfolio site" />
+    <title>Jason S. Goossens</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/favicon.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navstyle.css" />
+    <script type="text/javascript" src="javascript/ui.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js" defer></script>
+    <script type="text/javascript" src="javascript/starfield.js" defer></script>
+  </head>
+  <body>
+    <div class="title-bar">
+      <a href="https://www.jasongoossens.be/">
+        <div class="circle">J</div>
+      </a>
+      <nav>
+        <div class="menu-toggle">
+          &lt;nav&gt;
+        </div>
+        <div class="menu">
+          <a class="nav-item" href="#home">Home</a>
+          <a class="nav-item" href="#about">About</a>
+          <a class="nav-item" href="#projects">Projects</a>
+          <a class="nav-item" href="#skills">Skills</a>
+          <a class="nav-item" href="#cv">CV</a>
+          <a class="nav-item" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+    <div id="home" class="section">
+      <div class="home-content">
+        Hi. My name is Jason. I'm a full stack developer, living in Antwerp,
+        Belgium.
+      </div>
+    </div>
+    <div id="about" class="section">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="images/aboutme.jpg" alt="Jason Goossens" />
+        </div>
+        <div class="about-text">
+          <p>
+            My name is Jason Goossens, and I'm a full stack developer, living in
+            Antwerp, Belgium. I spent the first part of my career, about 12
+            years, working as an accountant for various companies in Antwerp.
+            During that time, in most jobs, I was responsible for the complete
+            accounting of one of more Belgian locations, reporting to
+            headquarters, maintaining the customer accounts with other branches,
+            etc.
+          </p>
+          <p>
+            I learned to value accuracy in all aspects of a job, the ability to
+            plan for, and adhere to hard deadlines, and the importance of my own
+            contributions to a larger whole. This is also where I took my first
+            steps into programming, creating VB macro's to automate part of my
+            workload, and using SQL to customize reports.
+          </p>
+          <p>
+            At age 36 I decided to change course and study programming, learning
+            the basics and growing from there.
+          </p>
+          <p>
+            I love the ongoing problem-solving involved with programming, and
+            working towards a satisfying solution, together with the
+            satisfaction of delivering something that will improve some aspect
+            of a person's day.
+          </p>
+          <p>
+            My hobbies include working out, tinkering with code, playing with my
+            Raspberry Pi's & my son's 3D printer. I'm also interested in the
+            stock market and options trading, and how I can combine that with my
+            knowledge of programming. Apart from that I occasionally play the
+            guitar and enjoy cooking. And of course, the ever-present Netflix to
+            relax.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="projects" class="section">
+      <div class="content-title">
+        Projects
+        <span
+          >(I'm fully aware of how absurd it is to have a projects page with
+          little to no projects 😐 More are coming)</span
+        >
+      </div>
+      <div class="projects-content">
+        <div class="projects-card-container">
+          <div class="project-card">
+            <a href="https://jasongoossens.be">
+              <div class="card-title">
+                Portfolio site
+              </div>
+              <div class="card-image">
+                <img src="images/portfolio.jpg" alt="Portfolio image" />
+              </div>
+              <div class="card-technology-icons">
+                <div class="icon-container">
+                  <img src="images/icons/icon-html.png" alt="HTML" />
+                </div>
+                <div class="icon-container">
+                  <img src="images/icons/icon-css.png" alt="CSS" />
+                </div>
+                <div class="icon-container">
+                  <img
+                    src="images/icons/icon-javascript.png"
+                    alt="JavaScript"
+                  />
+                </div>
+                <div class="icon-container">
+                  <img src="images/icons/icon-git.png" alt="GitHub" />
+                </div>
+              </div>
+              <div class="card-description">
+                My personal portfolio site. Git push requests automatically
+                update the Firebase hosted version via CI/CD using Github
+                Actions.
+              </div>
+            </a>
+          </div>
+          <div class="project-card">
+            <a href="https://scanmycard.jasongoossens.be">
+              <div class="card-title">
+                ScanMyCard
+              </div>
+              <div class="card-image">
+                <img src="images/scanmycard.jpg" alt="ScanMyCard image" />
+              </div>
+              <div class="card-technology-icons">
+                <div class="icon-container">
+                  <img src="images/icons/icon-html.png" alt="HTML" />
+                </div>
+                <div class="icon-container">
+                  <img src="images/icons/icon-css.png" alt="CSS" />
+                </div>
+                <div class="icon-container">
+                  <img
+                    src="images/icons/icon-javascript.png"
+                    alt="JavaScript"
+                  />
+                </div>
+                <div class="icon-container">
+                  <img src="images/icons/icon-react.png" alt="React" />
+                </div>
+                <div class="icon-container">
+                  <img src="images/icons/icon-csharp.png" alt="C#" />
+                </div>
+                <div class="icon-container">
+                  <img src="images/icons/icon-mysql.png" alt="MySQL" />
+                </div>
+              </div>
+              <div class="card-description">
+                A basic React app that uses the Antwerp Opendata API and Leaflet
+                to display A-kaart scanning locations. In an unhosted version,
+                data is persisted with a C# back-end and MySQL DB.
+              </div>
+            </a>
+          </div>
+          <div class="project-card">
+            <a href="https://whattoeatandbuy.jasongoossens.be">
+              <div class="card-title">
+                WhatToEatAndBuy
+              </div>
+              <div class="card-image">
+                <img
+                  src="images/project-placeholder-in-progress.jpg"
+                  alt="WhatToEatAndBuy image"
+                />
+              </div>
+              <div class="card-technology-icons">
+                <div class="icon-container">
+                  <img src="images/icons/icon-html.png" alt="HTML" />
+                </div>
+                <div class="icon-container">
+                  <img src="images/icons/icon-css.png" alt="CSS" />
+                </div>
+                <div class="icon-container">
+                  <img src="images/icons/icon-php.png" alt="PHP" />
+                </div>
+                <div class="icon-container">
+                  <img
+                    src="images/icons/icon-javascript.png"
+                    alt="JavaScript"
+                  />
+                </div>
+                <div class="icon-container">
+                  <img src="images/icons/icon-jquery.png" alt="jQuery" />
+                </div>
+                <div class="icon-container">
+                  <img src="images/icons/icon-mysql.png" alt="MySQL" />
+                </div>
+              </div>
+              <div class="card-description">
+                This app consists of a PHP back-end with a responsive
+                front-end CRUD component for recipes and ingredients, and a
+                bi-weekly mealplanner, which also generates a PDF grocery list.
+              </div>
+            </a>
+          </div>
+          <div class="project-card">
+            <a href="https://mealplanner.jasongoossens.be">
+              <div class="card-title">
+                Mealplanner
+              </div>
+              <div class="card-image">
+                <img
+                  src="images/project-placeholder-in-progress.jpg"
+                  alt="Mealplanner image"
+                />
+              </div>
+              <div class="card-technology-icons">
+                <div class="icon-container">
+                  <img src="images/icons/icon-html.png" alt="HTML" />
+                </div>
+                <div class="icon-container">
+                  <img src="images/icons/icon-css.png" alt="CSS" />
+                </div>
+                <div class="icon-container">
+                  <img
+                    src="images/icons/icon-javascript.png"
+                    alt="JavaScript"
+                  />
+                </div>
+                <div class="icon-container">
+                  <img src="images/icons/icon-node.png" alt="Node" />
+                </div>
+                <div class="icon-container">
+                  <img src="images/icons/icon-react.png" alt="React" />
+                </div>
+                <div class="icon-container">
+                  <img src="images/icons/icon-mysql.png" alt="MySQL" />
+                </div>
+              </div>
+              <div class="card-description">
+                This app semi-randomly plans a week of meals depending on their
+                category, and a few my own restrictions (never more than one
+                pasta meal in a week, fast-food only on a Sunday, etc)
+              </div>
+            </a>
+          </div>
+          <div class="project-card">
+            <a href="https://givemeoptions.jasongoossens.be">
+              <div class="card-title">
+                GiveMeOptions
+              </div>
+              <div class="card-image">
+                <img
+                  src="images/project-placeholder-in-progress.jpg"
+                  alt="GiveMeOptions image"
+                />
+              </div>
+              <div class="card-technology-icons">
+                <div class="icon-container">
+                  <img src="images/icons/icon-html.png" alt="HTML" />
+                </div>
+                <div class="icon-container">
+                  <img src="images/icons/icon-css.png" alt="CSS" />
+                </div>
+                <div class="icon-container">
+                  <img
+                    src="images/icons/icon-javascript.png"
+                    alt="JavaScript"
+                  />
+                </div>
+                <div class="icon-container">
+                  <img src="images/icons/icon-node.png" alt="Node" />
+                </div>
+                <div class="icon-container">
+                  <img src="images/icons/icon-react.png" alt="React" />
+                </div>
+                <div class="icon-container">
+                  <img src="images/icons/icon-mysql.png" alt="MySQL" />
+                </div>
+              </div>
+              <div class="card-description">
+                This app displays the daily industry moves and interesting
+                individual stock, and possibly their interesting options.
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="skills" class="section">
+      <div class="content-title">
+        Things I know
+        <span>(this will grow in time)</span>
+      </div>
+      <div class="skill-content-container">
+        <div class="programming">
+          <div class="skill-content-title">Programming</div>
+        </div>
+        <div class="programming-icons skill-content-icons">
+          <div class="icon-container">
+            <img src="images/icons/icon-php.png" alt="PHP" />
+            <div class="icon-title">PHP</div>
+          </div>
+          <div class="icon-container">
+            <img src="images/icons/icon-javascript.png" alt="JavaScript" />
+            <div class="icon-title">JavaScript</div>
+          </div>
+          <div class="icon-container">
+            <img src="images/icons/icon-csharp.png" alt="C Sharp" />
+            <div class="icon-title">C#</div>
+          </div>
+        </div>
+        <div class="web">
+          <div class="skill-content-title">Web</div>
+        </div>
+        <div class="web-icons skill-content-icons">
+          <div class="icon-container">
+            <img src="images/icons/icon-html.png" alt="HTML5" />
+            <div class="icon-title">HTML</div>
+          </div>
+          <div class="icon-container">
+            <img src="images/icons/icon-css.png" alt="CSS3" />
+            <div class="icon-title">CSS</div>
+          </div>
+          <div class="icon-container">
+            <img src="images/icons/icon-node.png" alt="Node" />
+            <div class="icon-title">Node</div>
+          </div>
+          <div class="icon-container">
+            <img src="images/icons/icon-react.png" alt="React" />
+            <div class="icon-title">React</div>
+          </div>
+          <div class="icon-container">
+            <img src="images/icons/icon-jquery.png" alt="jQuery" />
+            <div class="icon-title">jQuery</div>
+          </div>
+        </div>
+        <div class="other">
+          <div class="skill-content-title">Other</div>
+        </div>
+        <div class="other-icons skill-content-icons">
+          <div class="icon-container">
+            <img src="images/icons/icon-mysql.png" alt="MySQL" />
+            <div class="icon-title">MySQL</div>
+          </div>
+          <div class="icon-container">
+            <img src="images/icons/icon-git.png" alt="Git" />
+            <div class="icon-title">Git</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cv" class="section">
+      <div class="content-title">
+        Curriculum Vitae
+      </div>
+      <div class="cv-content-container">
+        <div class="job-container">
+          <div class="job-description left">
+            <div class="job-period">
+              2019<span class="period-marker"></span>
+            </div>
+            <div class="job-title">Sotware developer</div>
+            <div class="job-company">AML BVBA</div>
+          </div>
+          <div class="job-description right"></div>
+        </div>
+        <div class="job-container">
+          <div class="job-description left"></div>
+          <div class="job-description right">
+            <div class="job-period">
+              <span class="period-marker"></span>2018-2019
+            </div>
+            <div class="job-title">PHP developer</div>
+            <div class="job-company">Tactics BVBA</div>
+          </div>
+        </div>
+        <div class="job-container">
+          <div class="job-description left">
+            <div class="job-period">
+              2013-2016 <span class="period-marker"></span>
+            </div>
+            <div class="job-title">Accountant</div>
+            <div class="job-company">Lab Support NV</div>
+          </div>
+          <div class="job-description right"></div>
+        </div>
+        <div class="job-container">
+          <div class="job-description left"></div>
+          <div class="job-description right">
+            <div class="job-period">
+              <span class="period-marker"></span>2013
+            </div>
+            <div class="job-title">Accountant agent desk</div>
+            <div class="job-company">Seatrade Reefer Chartering NV</div>
+          </div>
+        </div>
+        <div class="job-container">
+          <div class="job-description left">
+            <div class="job-period">
+              2010-2013 <span class="period-marker"></span>
+            </div>
+            <div class="job-title">Intercompany accountant</div>
+            <div class="job-company">Kerry Logistics BVBA</div>
+          </div>
+          <div class="job-description right"></div>
+        </div>
+        <div class="job-container">
+          <div class="job-description left"></div>
+          <div class="job-description right">
+            <div class="job-period">
+              <span class="period-marker"></span>2007-2010
+            </div>
+            <div class="job-title">Accountant</div>
+            <div class="job-company">TE Group NV</div>
+          </div>
+        </div>
+        <div class="job-container">
+          <div class="job-description left">
+            <div class="job-period">
+              2007 <span class="period-marker"></span>
+            </div>
+            <div class="job-title">Accountant</div>
+            <div class="job-company">
+              Veolia Environmental Services Treatment NV
+            </div>
+          </div>
+          <div class="job-description right"></div>
+        </div>
+        <div class="job-container">
+          <div class="job-description left"></div>
+          <div class="job-description right">
+            <div class="job-period">
+              <span class="period-marker"></span>2007
+            </div>
+            <div class="job-title">Accountant</div>
+            <div class="job-company">Göbel & Partner BVBA</div>
+          </div>
+        </div>
+        <div class="job-container">
+          <div class="job-description left">
+            <div class="job-period">
+              2003-2007 <span class="period-marker"></span>
+            </div>
+            <div class="job-title">Accounts Payable clerk</div>
+            <div class="job-company">SGS Coordination Center NV</div>
+          </div>
+          <div class="job-description right"></div>
+        </div>
+        <div class="job-container">
+          <div class="job-description left"></div>
+          <div class="job-description right">
+            <div class="job-period">
+              <span class="period-marker"></span>2001-2002
+            </div>
+            <div class="job-title">Administrative clerk</div>
+            <div class="job-company">Fidea NV</div>
+          </div>
+        </div>
+        <div class="job-container">
+          <div class="job-description left">
+            <div class="job-period">
+              1999-2001 <span class="period-marker"></span>
+            </div>
+            <div class="job-title">Administrative clerk</div>
+            <div class="job-company">Compumark NV</div>
+          </div>
+          <div class="job-description right"></div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="section">
+      <div class="content-title">Contact me</div>
+      <div class="link-container">
+        <div class="link">
+          <div class="link-icon">
+            <a href="mailto:jason.goossens@gmail.com?subject=Mail from jasongoossens.be">
+              <img src="images/icons/email.png" alt="Email" title="Email me" />
+            </a>
+          </div>
+          <a href="mailto:jason.goossens@gmail.com?subject=Mail from jasongoossens.be">Email</a>
+        </div>
+        <div class="link">
+          <div class="link-icon">
+            <a href="https://github.com/jasongoossens" target="”_blank”"></a>
+              <img
+                src="images/icons/github.png"
+                alt="Github"
+                title="Visit my github page"
+              />
+            </a>
+          </div>
+          <a href="https://github.com/jasongoossens" target="”_blank”">Github</a>
+        </div>
+        <div class="link">
+          <div class="link-icon">
+            <a href="https://www.linkedin.com/in/jason-goossens/" target="”_blank”">
+              <img src="images/icons/linkedin.png" alt="LinkedIn" title="LinkedIn" />
+            </a>
+          </div>
+          <a href="https://www.linkedin.com/in/jason-goossens/" target="”_blank”">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
