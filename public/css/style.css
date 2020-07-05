@@ -145,8 +145,8 @@ nav {
 }
 
 #about {
-  /* background-color: var(--secondary-background); */
-  background: linear-gradient(
+  background-color: var(--secondary-background);
+  /* background: linear-gradient(
     180deg,
     rgba(30, 63, 102, 1) 0%,
     rgba(30, 63, 102, 1) 7%,
@@ -160,8 +160,9 @@ nav {
     rgba(232, 235, 239, 1) 95%,
     rgba(237, 239, 242, 1) 100%,
     rgba(245, 245, 245, 1) 100%
-  );
+  ); */
   color: white;
+  background-color: RED;
 }
 
 .about-content {
