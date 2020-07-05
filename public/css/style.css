@@ -135,6 +135,11 @@ body {
 
 .about-text {
   text-align: justify;
+  color: white;
+  background-color: rgba(115, 165, 198, 0.85);
+  padding: 5px 35px;
+  border-radius: 25px;
+  font-weight: 500;
 }
 
 .content-title {
@@ -469,6 +474,11 @@ body {
   .about-image img {
     min-width: 60vw;
     border: 2vw solid #73a5c6;
+  }
+
+  .about-text {
+    margin-top: 15px;;
+    padding: 3px 15px;
   }
 
   .content-title {
