@@ -10,7 +10,7 @@ function setup() {
   starfield.position(x, y);
   starfield.parent("home");
 
-  const particlesAmount = Math.floor(window.innerWidth / 2);
+  const particlesAmount = Math.floor(window.innerWidth / 5);
 
   for (let i = 0; i < particlesAmount; i++) {
     particles.push(new Particle());
@@ -33,7 +33,7 @@ function draw() {
 class Particle {
   constructor() {
     this.pos = createVector(random(width), random(height));
-    this.size = random(0.01, 1);
+    this.size = random(0.01, 2);
   }
 
   drawStatic() {
