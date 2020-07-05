@@ -35,6 +35,7 @@ body {
 }
 
 nav {
+  position: fixed;
   padding: 5px 0 5px 10px;
   display: flex;
   flex-direction: row-reverse;
@@ -159,7 +160,7 @@ nav {
     rgba(229, 233, 237, 1) 91%,
     rgba(232, 235, 239, 1) 95%,
     rgba(237, 239, 242, 1) 100%,
-    rgba(255, 255, 255, 1) 100%
+    rgba(245, 245, 245, 1) 100%
   );
   color: white;
 }
@@ -530,7 +531,7 @@ nav {
   }
 
   .title-bar {
-    /* position: fixed; */
+    position: fixed;
     font-size: 1.5rem;
   }
 
