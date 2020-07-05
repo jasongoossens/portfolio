@@ -35,7 +35,6 @@ body {
 }
 
 nav {
-  position: fixed;
   padding: 5px 0 5px 10px;
   display: flex;
   flex-direction: row-reverse;
@@ -146,7 +145,7 @@ nav {
 }
 
 #about {
-  background-color: var(--secondary-background);
+  /* background-color: var(--secondary-background); */
   background: linear-gradient(
     180deg,
     rgba(30, 63, 102, 1) 0%,
