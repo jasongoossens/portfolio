@@ -31,7 +31,7 @@ body {
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
-  height: 100%;
+  height: 100vh;
 }
 
 nav {
@@ -158,7 +158,6 @@ nav {
     rgba(219, 224, 230, 1) 86%,
     rgba(229, 233, 237, 1) 91%,
     rgba(232, 235, 239, 1) 95%,
-    rgba(237, 239, 242, 1) 100%,
     rgba(245, 245, 245, 1) 100%
   ); */
   color: white;
