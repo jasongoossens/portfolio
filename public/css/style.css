@@ -22,13 +22,9 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  width: 100%;
+html {
   height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -150,6 +146,7 @@ nav {
 
 #about {
   background-color: var(--secondary-background);
+  background-color: red;
   background: linear-gradient(
     180deg,
     rgba(30, 63, 102, 1) 0%,
