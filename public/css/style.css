@@ -1,6 +1,9 @@
 :root {
   --primary-background: #1e3f66;
   --secondary-background: whitesmoke;
+  --text-on-light-background: black;
+  --text-on-dark-background: whitesmoke;
+  --card-background: #bcd2e8;
 }
 
 *::-webkit-scrollbar {
@@ -70,21 +73,12 @@ nav {
   padding-right: 5px;
   color: white;
   text-decoration: none;
+  transition: color 0.4s;
 }
 
-/* line under nav items */
-.underline-link-white::after {
-  margin: auto;
-  content: "";
-  display: block;
-  background-color: white;
-  height: 1px;
-  width: 0;
-  transition: width 0.2s;
-}
-
-.underline-link-white:hover::after {
-  width: 100%;
+.nav-item:hover {
+  color: var(--text-on-light-background);
+  color: #053570;
 }
 
 .title-bar {
@@ -93,7 +87,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  color: var(--secondary-background);
+  color: var(--text-on-dark-background);
   font-size: 2.25rem;
   display: flex;
   align-items: center;
@@ -102,7 +96,7 @@ nav {
 
 .title-bar a {
   display: inline-block;
-  color: var(--secondary-background);
+  color: var(--text-on-dark-background);
   text-decoration: none;
 }
 
@@ -124,7 +118,7 @@ nav {
 }
 
 #home {
-  color: var(--secondary-background);
+  color: var(--text-on-dark-background);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,7 +154,7 @@ nav {
     rgba(232, 235, 239, 1) 95%,
     rgba(245, 245, 245, 1) 100%
   );
-  color: white;
+  color: var(--text-on-dark-background);
 }
 
 .about-content {
@@ -187,7 +181,7 @@ nav {
 
 .about-text {
   text-align: justify;
-  color: white;
+  color: var(--text-on-dark-background);
   background-color: rgba(115, 165, 198, 0.25);
   padding: 5px 35px;
   border-radius: 25px;
@@ -228,25 +222,30 @@ nav {
 }
 
 .projects-content {
-  padding: 3vh 12vw;
+  padding: 3vh 8vw;
   font-size: calc(12px + 0.5vw);
   line-height: 1.35em;
 }
 
 .projects-card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 25px;
 }
 
 .project-card {
-  background-color: rgb(112, 112, 112);
-  color: var(--secondary-background);
-  box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.54);
+  background-color: var(--card-background);
+  box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: var(--text-on-light-background);
+  font-size: 1.5rem;
 }
 
 .project-card:hover {
@@ -255,16 +254,10 @@ nav {
   z-index: 5555;
 }
 
-.project-card a {
-  text-decoration: none;
-  color: var(--secondary-background);
-  font-size: 1rem;
-}
-
 .card-title {
-  background-color: rgb(112, 112, 112);
-  color: var(--secondary-background);
+  background-color: var(--card-background);
   text-align: center;
+  padding: 10px 0;
 }
 
 .card-image img {
@@ -282,21 +275,26 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgrey;
+  background-color: white;
   height: 5vh;
   width: 5vh;
   border-radius: 50%;
-  margin: 3px;
+  margin: 8px 3px;
 }
 
 .card-technology-icons .icon-container img {
-  height: 3.5vh;
+  height: 3.8vh;
 }
 
 .card-description {
+  text-align: justify;
   padding: 0 10px 5px 10px;
   font-size: 1rem;
   line-height: 1.4rem;
+}
+
+a + .card-description {
+  margin-top: 10px;
 }
 
 #skills {
