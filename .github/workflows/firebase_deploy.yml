@@ -1,4 +1,4 @@
-name: Firebase Continuous deployment
+name: Firebase Continuous deployment Portfolio site
 
 on:
   push:
