@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
   height: 100%;
@@ -179,7 +179,7 @@ nav {
   border-radius: 50%;
 }
 
-.about-text {
+.text-background {
   text-align: justify;
   color: var(--text-on-dark-background);
   background-color: rgba(115, 165, 198, 0.25);
@@ -220,6 +220,10 @@ nav {
   padding: 3vh 8vw;
   font-size: calc(12px + 0.5vw);
   line-height: 1.35em;
+}
+
+.projects-content .text-background {
+  margin-bottom: 25px;
 }
 
 .projects-card-container {
@@ -301,12 +305,12 @@ a + .card-description {
   display: grid;
   grid-template-rows: repeat(3, 1fr 3fr);
   grid-template-areas:
-    "programming"
-    "programming-icons"
-    "web"
-    "web-icons"
-    "other"
-    "other-icons";
+    'programming'
+    'programming-icons'
+    'web'
+    'web-icons'
+    'other'
+    'other-icons';
   padding: 1vw 4vw;
 }
 
@@ -451,7 +455,7 @@ a + .card-description {
 
 .underline-link-black::after {
   margin: auto;
-  content: "";
+  content: '';
   display: block;
   background-color: black;
   height: 1px;
