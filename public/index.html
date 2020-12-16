@@ -1,477 +1,667 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<meta name="author" content="Jason Goossens"/>
-		<meta name="keywords" content="portfolio, Jason Goossens, web developer, front-end"/>
-		<meta name="description" content="Jason Goossens' portfolio site"/>
-		<title>Jason S. Goossens</title>
-		<link rel="icon" type="image/png" sizes="192x192" href="images/favicon.png"/>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
-		<link rel="stylesheet" href="css/style.css"/>
-		<link rel="stylesheet" href="css/navstyle.css"/>
-		<script type="text/javascript" src="javascript/ui.js" defer></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js" defer></script>
-		<script type="text/javascript" src="javascript/starfield.js" defer></script>
-	</head>
-	<body>
-		<div class="title-bar">
-			<a href="https://www.jasongoossens.be/">
-				<div class="circle">J</div>
-			</a>
-			<nav>
-				<div class="menu-toggle">
-					&lt;nav&gt;
-				</div>
-				<div class="menu">
-					<a class="nav-item" href="#home">Home</a>
-					<a class="nav-item" href="#about">About</a>
-					<a class="nav-item" href="#projects">Projects</a>
-					<a class="nav-item" href="#skills">Skills</a>
-					<a class="nav-item" href="#cv">CV</a>
-					<a class="nav-item" href="#contact">Contact</a>
-				</div>
-			</nav>
-		</div>
-		<div id="home" class="section">
-			<div class="home-content">
-				Hi. My name is Jason. I'm a full stack developer, living in Antwerp,
-																																																        Belgium.
-			</div>
-		</div>
-		<div id="about" class="section">
-			<div class="about-content">
-				<div class="about-image">
-					<img src="images/aboutme.jpg" alt="Jason Goossens"/>
-				</div>
-				<div class="about-text text-background">
-					<p>
-						My name is Jason Goossens, and I'm a full stack developer, living in
-																																																																								            Antwerp, Belgium. I spent the first part of my career, about 13
-																																																																								            years, working as an accountant for various companies in Antwerp.
-																																																																								            During that time, in most jobs, I was responsible for the complete
-																																																																								            accounting of one of more Belgian locations, reporting to
-																																																																								            headquarters, maintaining the customer accounts with other branches,
-																																																																								            etc.
-					</p>
-					<p>
-						I learned to value accuracy in all aspects of a job, the ability to
-																																																																								            plan for, and adhere to hard deadlines, and the importance of my own
-																																																																								            contributions to a larger whole. This is also where I took my first
-																																																																								            steps into programming, creating VB macro's to automate part of my
-																																																																								            workload, and using SQL to customize reports.
-					</p>
-					<p>
-						At age 36 I decided to change course and study programming, learning
-																																																																								            the basics and growing from there.
-					</p>
-					<p>
-						I love the ongoing problem-solving involved with programming, and
-																																																																								            working towards a satisfying solution, together with the
-																																																																								            satisfaction of delivering something that will improve some aspect
-																																																																								            of a person's day.
-					</p>
-					<p>
-						My hobbies include working out, tinkering with code, playing with my
-																																																																								            Raspberry Pi's & my son's 3D printer. I'm also interested in the
-																																																																								            stock market and options trading, and how I can combine that with my
-																																																																								            knowledge of programming. Apart from that I occasionally play the
-																																																																								            guitar and enjoy cooking. And of course, the ever-present Netflix to
-																																																																								            relax.
-					</p>
-				</div>
-			</div>
-		</div>
-		<div id="projects" class="section">
-			<div class="content-title">
-				Projects
-			</div>
-			<div class="projects-content">
-				<div class="text-background">
-					<p>
-						My projects are hosted on a few platforms, Firebase and Heroko being some of them,
-																																				            and a Raspberry Pi with Apache being the other.
-					</p>
-					<p>Feel free to tinker with them to test the functionality.</p>
-					<p>
-						Instead of doing typical tutorial projects, I'd rather make things
-																																																																								            I'd want to use myself. Therefore the projects will probably be
-																																																																								            centered around cooking, the stock market, and working out.
-					</p>
-				</div>
-				<div class="projects-card-container">
-					<div class="project-card">
-						<a href="https://jasongoossens.be" target="_blank" title="Visit project">
-							<div class="card-title">
-								Portfolio site
-							</div>
-							<div class="card-image">
-								<img src="images/portfolio.jpg" alt="Portfolio image"/>
-							</div>
-							<div class="card-technology-icons">
-								<div class="icon-container">
-									<img src="images/icons/icon-html.png" alt="HTML"/>
-								</div>
-								<div class="icon-container">
-									<img src="images/icons/icon-css.png" alt="CSS"/>
-								</div>
-								<div class="icon-container">
-									<img src="images/icons/icon-javascript.png" alt="JavaScript"/>
-								</div>
-								<div class="icon-container">
-									<img src="images/icons/icon-git.png" alt="GitHub"/>
-								</div>
-							</div>
-							<div class="card-description">
-								My personal portfolio site. Git push requests automatically
-																																																																																																                update the Firebase hosted version via CI/CD using Github
-																																																																																																                Actions.
-							</div>
-						</a>
-						<a class="card-description" href="https://github.com/jasongoossens/portfolio" target="_blank" title="See code on Github">View code on Github</a>
-					</div>
-					<div class="project-card">
-						<a href="https://scanmycard.jasongoossens.be" target="_blank" title="Visit project">
-							<div class="card-title">
-								ScanMyCard
-							</div>
-							<div class="card-image">
-								<img src="images/scanmycard.jpg" alt="ScanMyCard image"/>
-							</div>
-							<div class="card-technology-icons">
-								<div class="icon-container">
-									<img src="images/icons/icon-html.png" alt="HTML"/>
-								</div>
-								<div class="icon-container">
-									<img src="images/icons/icon-css.png" alt="CSS"/>
-								</div>
-								<div class="icon-container">
-									<img src="images/icons/icon-javascript.png" alt="JavaScript"/>
-								</div>
-								<div class="icon-container">
-									<img src="images/icons/icon-react.png" alt="React"/>
-								</div>
-								<div class="icon-container">
-									<img src="images/icons/icon-csharp.png" alt="C#"/>
-								</div>
-								<div class="icon-container">
-									<img src="images/icons/icon-mysql.png" alt="MySQL"/>
-								</div>
-							</div>
-							<div class="card-description">
-								A basic React app that uses the Antwerp Opendata API and Leaflet
-																																																																																																                to display A-card scanning locations (in a currently unhosted
-																																																																																																                version, data is persisted with a C# back-end and MySQL
-																																																																																																                database)
-							</div>
-						</a>
-						<a class="card-description" href="https://bitbucket.org/jason80/pro5jasongoossens/src/master/mmt-react/" target="_blank" title="See code on Bitbucket">View code on Bitbucket</a>
-					</div>
-					<div class="project-card">
-						<a href="https://whattoeatandbuy.jasongoossens.be" target="_blank" title="Visit project">
-							<div class="card-title">
-								WhatToEatAndBuy
-							</div>
-							<div class="card-image">
-								<img src="images/whattoeatandbuy.jpg" alt="WhatToEatAndBuy image"/>
-							</div>
-							<div class="card-technology-icons">
-								<div class="icon-container">
-									<img src="images/icons/icon-html.png" alt="HTML"/>
-								</div>
-								<div class="icon-container">
-									<img src="images/icons/icon-css.png" alt="CSS"/>
-								</div>
-								<div class="icon-container">
-									<img src="images/icons/icon-php.png" alt="PHP"/>
-								</div>
-								<div class="icon-container">
-									<img src="images/icons/icon-javascript.png" alt="JavaScript"/>
-								</div>
-								<div class="icon-container">
-									<img src="images/icons/icon-jquery.png" alt="jQuery"/>
-								</div>
-								<div class="icon-container">
-									<img src="images/icons/icon-mysql.png" alt="MySQL"/>
-								</div>
-							</div>
-							<div class="card-description">
-								This Raspberry Pi hosted app consists of a PHP back-end, a MySQL
-																																																																																																                database, with a (moblie-only) front-end CRUD component for
-																																																																																																                recipes and ingredients, and a bi-weekly mealplanner which also
-																																																																																																                generates a PDF grocery list.<br/>
-								<span style="font-weight: 600; font-style: italic;">
-									Could be offline due to Raspberry Pi being unplugged !</span>
-							</div>
-						</a>
-						<a class="card-description" href="https://github.com/jasongoossens/whattoeatandbuy" target="_blank" title="See code on Github">View code on Github</a>
-					</div>
-					<div class="project-card">
-						<a href="http://stocktoolbox.jasongoossens.be" target="_blank" title="Visit project">
-							<div class="card-title">
-								StockToolbox
-							</div>
-							<div class="card-image">
-								<img src="images/stocktoolbox.jpg" alt="StockToolbox image"/>
-							</div>
-							<div class="card-technology-icons">
-								<div class="icon-container">
-									<img src="images/icons/icon-html.png" alt="HTML"/>
-								</div>
-								<div class="icon-container">
-									<img src="images/icons/icon-css.png" alt="CSS"/>
-								</div>
-								<div class="icon-container">
-									<img src="images/icons/icon-javascript.png" alt="JavaScript"/>
-								</div>
-								<div class="icon-container">
-									<img src="images/icons/icon-node.png" alt="Node"/>
-								</div>
-								<div class="icon-container">
-									<img src="images/icons/icon-mysql.png" alt="MySQL"/>
-								</div>
-							</div>
-							<div class="card-description">
-								This app is going to show specific stock information like the
-																																																																																                F-score, certain fundamentals, etc, and general information like
-																																																																																                % change per industry, large moves, media mentions, etc.
-							</div>
-						</a>
-						<a class="card-description" href="https://github.com/jasongoossens/stocktoolbox" target="_blank" title="See code on Bitbucket">View code on GitHub</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="skills" class="section">
-			<div class="content-title">
-				Things I know
-				<span>(this will grow in time)</span>
-			</div>
-			<div class="skill-content-container">
-				<div class="programming">
-					<div class="skill-content-title">Programming</div>
-				</div>
-				<div class="programming-icons skill-content-icons">
-					<div class="icon-container">
-						<img src="images/icons/icon-php.png" alt="PHP"/>
-						<div class="icon-title">PHP</div>
-					</div>
-					<div class="icon-container">
-						<img src="images/icons/icon-javascript.png" alt="JavaScript"/>
-						<div class="icon-title">JavaScript</div>
-					</div>
-					<!-- <div class="icon-container">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Jason Goossens" />
+        <meta
+            name="keywords"
+            content="portfolio, Jason Goossens, web developer, front-end"
+        />
+        <meta name="description" content="Jason Goossens' portfolio site" />
+        <title>Jason S. Goossens</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="images/favicon.png"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/navstyle.css" />
+        <script type="text/javascript" src="javascript/ui.js" defer></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"
+            defer
+        ></script>
+        <script
+            type="text/javascript"
+            src="javascript/starfield.js"
+            defer
+        ></script>
+    </head>
+    <body>
+        <div class="title-bar">
+            <a href="https://www.jasongoossens.be/">
+                <div class="circle">J</div>
+            </a>
+            <nav>
+                <div class="menu-toggle">
+                    &lt;nav&gt;
+                </div>
+                <div class="menu">
+                    <a class="nav-item" href="#home">Home</a>
+                    <a class="nav-item" href="#about">About</a>
+                    <a class="nav-item" href="#projects">Projects</a>
+                    <a class="nav-item" href="#skills">Skills</a>
+                    <a class="nav-item" href="#cv">CV</a>
+                    <a class="nav-item" href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+        <div id="home" class="section">
+            <div class="home-content">
+                Hi. My name is Jason. I'm a full stack developer, living in
+                Antwerp, Belgium.
+            </div>
+        </div>
+        <div id="about" class="section">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/aboutme.jpg" alt="Jason Goossens" />
+                </div>
+                <div class="about-text text-background">
+                    <p>
+                        My name is Jason Goossens, and I'm a full stack
+                        developer, living in Antwerp, Belgium. I spent the first
+                        part of my career, about 13 years, working as an
+                        accountant for various companies in Antwerp. During that
+                        time, in most jobs, I was responsible for the complete
+                        accounting of one of more Belgian locations, reporting
+                        to headquarters, maintaining the customer accounts with
+                        other branches, etc.
+                    </p>
+                    <p>
+                        I learned to value accuracy in all aspects of a job, the
+                        ability to plan for, and adhere to hard deadlines, and
+                        the importance of my own contributions to a larger
+                        whole. This is also where I took my first steps into
+                        programming, creating VB macro's to automate part of my
+                        workload, and using SQL to customize reports.
+                    </p>
+                    <p>
+                        At age 36 I decided to change course and study
+                        programming, learning the basics and growing from there.
+                    </p>
+                    <p>
+                        I love the ongoing problem-solving involved with
+                        programming, and working towards a satisfying solution,
+                        together with the satisfaction of delivering something
+                        that will improve some aspect of a person's day.
+                    </p>
+                    <p>
+                        My hobbies include working out, tinkering with code,
+                        playing with my Raspberry Pi's & my son's 3D printer.
+                        I'm also interested in the stock market and options
+                        trading, and how I can combine that with my knowledge of
+                        programming. Apart from that I occasionally play the
+                        guitar and enjoy cooking. And of course, the
+                        ever-present Netflix to relax.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="projects" class="section">
+            <div class="content-title">
+                Projects
+            </div>
+            <div class="projects-content">
+                <div class="text-background">
+                    <p>
+                        My projects are hosted on a few platforms, Firebase and
+                        Heroko being some of them, and a Raspberry Pi with
+                        Apache being the other.
+                    </p>
+                    <p>
+                        Feel free to tinker with them to test the functionality.
+                    </p>
+                    <p>
+                        Instead of doing typical tutorial projects, I'd rather
+                        make things I'd want to use myself. Therefore the
+                        projects will probably be centered around cooking, the
+                        stock market, and working out.
+                    </p>
+                </div>
+                <div class="projects-card-container">
+                    <div class="project-card">
+                        <a
+                            href="https://jasongoossens.be"
+                            target="_blank"
+                            title="Visit project"
+                        >
+                            <div class="card-title">
+                                Portfolio site
+                            </div>
+                            <div class="card-image">
+                                <img
+                                    src="images/portfolio.jpg"
+                                    alt="Portfolio image"
+                                />
+                            </div>
+                            <div class="card-technology-icons">
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-html.png"
+                                        alt="HTML"
+                                    />
+                                </div>
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-css.png"
+                                        alt="CSS"
+                                    />
+                                </div>
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-javascript.png"
+                                        alt="JavaScript"
+                                    />
+                                </div>
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-git.png"
+                                        alt="GitHub"
+                                    />
+                                </div>
+                            </div>
+                            <div class="card-description">
+                                My personal portfolio site. Git push requests
+                                automatically update the Firebase hosted version
+                                via CI/CD using Github Actions.
+                            </div>
+                        </a>
+                        <a
+                            class="card-description"
+                            href="https://github.com/jasongoossens/portfolio"
+                            target="_blank"
+                            title="See code on Github"
+                            >View code on Github</a
+                        >
+                    </div>
+                    <div class="project-card">
+                        <a
+                            href="https://scanmycard.jasongoossens.be"
+                            target="_blank"
+                            title="Visit project"
+                        >
+                            <div class="card-title">
+                                ScanMyCard
+                            </div>
+                            <div class="card-image">
+                                <img
+                                    src="images/scanmycard.jpg"
+                                    alt="ScanMyCard image"
+                                />
+                            </div>
+                            <div class="card-technology-icons">
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-html.png"
+                                        alt="HTML"
+                                    />
+                                </div>
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-css.png"
+                                        alt="CSS"
+                                    />
+                                </div>
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-javascript.png"
+                                        alt="JavaScript"
+                                    />
+                                </div>
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-react.png"
+                                        alt="React"
+                                    />
+                                </div>
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-csharp.png"
+                                        alt="C#"
+                                    />
+                                </div>
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-mysql.png"
+                                        alt="MySQL"
+                                    />
+                                </div>
+                            </div>
+                            <div class="card-description">
+                                A basic React app that uses the Antwerp Opendata
+                                API and Leaflet to display A-card scanning
+                                locations (there's no database behind it, so
+                                changes aren't persisted)
+                            </div>
+                        </a>
+                        <a
+                            class="card-description"
+                            href="https://bitbucket.org/jason80/pro5jasongoossens/src/master/mmt-react/"
+                            target="_blank"
+                            title="See code on Bitbucket"
+                            >View code on Bitbucket</a
+                        >
+                    </div>
+                    <div class="project-card">
+                        <a
+                            href="https://whattoeatandbuy.jasongoossens.be"
+                            target="_blank"
+                            title="Visit project"
+                        >
+                            <div class="card-title">
+                                WhatToEatAndBuy
+                            </div>
+                            <div class="card-image">
+                                <img
+                                    src="images/whattoeatandbuy.jpg"
+                                    alt="WhatToEatAndBuy image"
+                                />
+                            </div>
+                            <div class="card-technology-icons">
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-html.png"
+                                        alt="HTML"
+                                    />
+                                </div>
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-css.png"
+                                        alt="CSS"
+                                    />
+                                </div>
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-php.png"
+                                        alt="PHP"
+                                    />
+                                </div>
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-javascript.png"
+                                        alt="JavaScript"
+                                    />
+                                </div>
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-jquery.png"
+                                        alt="jQuery"
+                                    />
+                                </div>
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-mysql.png"
+                                        alt="MySQL"
+                                    />
+                                </div>
+                            </div>
+                            <div class="card-description">
+                                This Raspberry Pi hosted app consists of a PHP
+                                back-end, a MySQL database, with a front-end
+                                CRUD component for recipes, ingredients & units,
+                                and a bi-weekly mealplanner which also generates
+                                a PDF grocery list.<br />
+
+                                <span
+                                    style="font-weight: 600; font-style: italic;"
+                                    >To be viewed on mobile devices!<br />
+                                    (also: it could be offline due to Raspberry
+                                    Pi being unplugged!)</span
+                                >
+                            </div>
+                        </a>
+                        <a
+                            class="card-description"
+                            href="https://github.com/jasongoossens/whattoeatandbuy"
+                            target="_blank"
+                            title="See code on Github"
+                            >View code on Github</a
+                        >
+                    </div>
+                    <div class="project-card">
+                        <a
+                            href="http://stocktoolbox.jasongoossens.be"
+                            target="_blank"
+                            title="Visit project"
+                        >
+                            <div class="card-title">
+                                StockToolbox
+                            </div>
+                            <div class="card-image">
+                                <img
+                                    src="images/stocktoolbox.jpg"
+                                    alt="StockToolbox image"
+                                />
+                            </div>
+                            <div class="card-technology-icons">
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-html.png"
+                                        alt="HTML"
+                                    />
+                                </div>
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-css.png"
+                                        alt="CSS"
+                                    />
+                                </div>
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-javascript.png"
+                                        alt="JavaScript"
+                                    />
+                                </div>
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-node.png"
+                                        alt="Node"
+                                    />
+                                </div>
+                                <div class="icon-container">
+                                    <img
+                                        src="images/icons/icon-mysql.png"
+                                        alt="MySQL"
+                                    />
+                                </div>
+                            </div>
+                            <div class="card-description">
+                                This apps displays market information like daily
+                                performance of certain indices, upcoming
+                                earnings and news. Specific tickers can also be
+                                searched for, to get detailed technical
+                                information.
+                            </div>
+                        </a>
+                        <a
+                            class="card-description"
+                            href="https://github.com/jasongoossens/stocktoolbox"
+                            target="_blank"
+                            title="See code on Bitbucket"
+                            >View code on GitHub</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="skills" class="section">
+            <div class="content-title">
+                Things I know
+                <span>(this will grow in time)</span>
+            </div>
+            <div class="skill-content-container">
+                <div class="programming">
+                    <div class="skill-content-title">Programming</div>
+                </div>
+                <div class="programming-icons skill-content-icons">
+                    <div class="icon-container">
+                        <img src="images/icons/icon-php.png" alt="PHP" />
+                        <div class="icon-title">PHP</div>
+                    </div>
+                    <div class="icon-container">
+                        <img
+                            src="images/icons/icon-javascript.png"
+                            alt="JavaScript"
+                        />
+                        <div class="icon-title">JavaScript</div>
+                    </div>
+                    <!-- <div class="icon-container">
 																																																																																																																																																																																																																																																																																																																											            <img src="images/icons/icon-csharp.png" alt="C Sharp" />
 																																																																																																																																																																																																																																																																																																																											            <div class="icon-title">C#</div>
 																																																																																																																																																																																																																																																																																																																											          </div> -->
-				</div>
-				<div class="web">
-					<div class="skill-content-title">Web</div>
-				</div>
-				<div class="web-icons skill-content-icons">
-					<div class="icon-container">
-						<img src="images/icons/icon-html.png" alt="HTML5"/>
-						<div class="icon-title">HTML</div>
-					</div>
-					<div class="icon-container">
-						<img src="images/icons/icon-css.png" alt="CSS3"/>
-						<div class="icon-title">CSS</div>
-					</div>
-					<div class="icon-container">
-						<img src="images/icons/icon-react.png" alt="React"/>
-						<div class="icon-title">React</div>
-					</div>
-					<div class="icon-container">
-						<img src="images/icons/icon-jquery.png" alt="jQuery"/>
-						<div class="icon-title">jQuery</div>
-					</div>
-				</div>
-				<div class="other">
-					<div class="skill-content-title">Other</div>
-				</div>
-				<div class="other-icons skill-content-icons">
-					<div class="icon-container">
-						<img src="images/icons/icon-node.png" alt="Node"/>
-						<div class="icon-title">Node</div>
-					</div>
-					<div class="icon-container">
-						<img src="images/icons/icon-mysql.png" alt="MySQL"/>
-						<div class="icon-title">MySQL</div>
-					</div>
-					<div class="icon-container">
-						<img src="images/icons/icon-mongodb.png" alt="MongoDB"/>
-						<div class="icon-title">MongoDB</div>
-					</div>
-					<div class="icon-container">
-						<img src="images/icons/icon-git.png" alt="Git"/>
-						<div class="icon-title">Git</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="cv" class="section">
-			<div class="content-title">
-				Curriculum Vitae
-			</div>
-			<div class="cv-content-container">
-				<div class="job-container">
-					<div class="job-description left"></div>
-					<div class="job-description right">
-						<div class="job-period">
-							<span class="period-marker"></span>2020-present
-						</div>
-						<div class="job-title">Back-end developer</div>
-						<div class="job-company">Peleman Industries NV</div>
-					</div>
-				</div>
-				<div class="job-container">
-					<div class="job-description left">
-						<div class="job-period">
-							2019<span class="period-marker"></span>
-						</div>
-						<div class="job-title">Sotware developer</div>
-						<div class="job-company">AML BVBA</div>
-					</div>
-					<div class="job-description right"></div>
-				</div>
-				<div class="job-container">
-					<div class="job-description left"></div>
-					<div class="job-description right">
-						<div class="job-period">
-							<span class="period-marker"></span>2018-2019
-						</div>
-						<div class="job-title">PHP developer</div>
-						<div class="job-company">Tactics BVBA</div>
-					</div>
-				</div>
-				<div class="job-container">
-					<div class="job-description left">
-						<div class="job-period">
-							2013-2016
-							<span class="period-marker"></span>
-						</div>
-						<div class="job-title">Accountant</div>
-						<div class="job-company">Lab Support NV</div>
-					</div>
-					<div class="job-description right"></div>
-				</div>
-				<div class="job-container">
-					<div class="job-description left"></div>
-					<div class="job-description right">
-						<div class="job-period">
-							<span class="period-marker"></span>2013
-						</div>
-						<div class="job-title">Accountant agent desk</div>
-						<div class="job-company">Seatrade Reefer Chartering NV</div>
-					</div>
-				</div>
-				<div class="job-container">
-					<div class="job-description left">
-						<div class="job-period">
-							2010-2013
-							<span class="period-marker"></span>
-						</div>
-						<div class="job-title">Intercompany accountant</div>
-						<div class="job-company">Kerry Logistics BVBA</div>
-					</div>
-					<div class="job-description right"></div>
-				</div>
-				<div class="job-container">
-					<div class="job-description left"></div>
-					<div class="job-description right">
-						<div class="job-period">
-							<span class="period-marker"></span>2007-2010
-						</div>
-						<div class="job-title">Accountant</div>
-						<div class="job-company">TE Group NV</div>
-					</div>
-				</div>
-				<div class="job-container">
-					<div class="job-description left">
-						<div class="job-period">
-							2007
-							<span class="period-marker"></span>
-						</div>
-						<div class="job-title">Accountant</div>
-						<div class="job-company">
-							Veolia Environmental Services Treatment NV
-						</div>
-					</div>
-					<div class="job-description right"></div>
-				</div>
-				<div class="job-container">
-					<div class="job-description left"></div>
-					<div class="job-description right">
-						<div class="job-period">
-							<span class="period-marker"></span>2007
-						</div>
-						<div class="job-title">Accountant</div>
-						<div class="job-company">Göbel & Partner BVBA</div>
-					</div>
-				</div>
-				<div class="job-container">
-					<div class="job-description left">
-						<div class="job-period">
-							2003-2007
-							<span class="period-marker"></span>
-						</div>
-						<div class="job-title">Accounts Payable clerk</div>
-						<div class="job-company">SGS Coordination Center NV</div>
-					</div>
-					<div class="job-description right"></div>
-				</div>
-				<div class="job-container">
-					<div class="job-description left"></div>
-					<div class="job-description right">
-						<div class="job-period">
-							<span class="period-marker"></span>2001-2002
-						</div>
-						<div class="job-title">Administrative clerk</div>
-						<div class="job-company">Fidea NV</div>
-					</div>
-				</div>
-				<div class="job-container">
-					<div class="job-description left">
-						<div class="job-period">
-							1999-2001
-							<span class="period-marker"></span>
-						</div>
-						<div class="job-title">Administrative clerk</div>
-						<div class="job-company">Compumark NV</div>
-					</div>
-					<div class="job-description right"></div>
-				</div>
-			</div>
-		</div>
-		<div id="contact" class="section">
-			<div class="content-title">Contact me</div>
-			<div class="link-container">
-				<div class="link">
-					<a href="mailto:jason.goossens@gmail.com?subject=Mail from jasongoossens.be">
-						<div class="link-icon">
-							<img src="images/icons/email.png" alt="Email" title="Email me"/>
-						</div>
-					</a>
-					<a class="underline-link-black" href="mailto:jason.goossens@gmail.com?subject=Mail from jasongoossens.be">Email</a>
-				</div>
-				<div class="link">
-					<a href="https://github.com/jasongoossens" target="_blank">
-						<div class="link-icon">
-							<img src="images/icons/github.png" alt="Github" title="Visit my github page"/>
-						</div>
-					</a>
-					<a class="underline-link-black" href="https://github.com/jasongoossens" target="_blank">Github</a>
-				</div>
-				<div class="link">
-					<a href="https://www.linkedin.com/in/jason-goossens/" target="_blank">
-						<div class="link-icon">
-							<img src="images/icons/linkedin.png" alt="LinkedIn" title="LinkedIn"/>
-						</div>
-					</a>
-					<a class="underline-link-black" href="https://www.linkedin.com/in/jason-goossens/" target="_blank">LinkedIn</a>
-				</div>
-			</div>
-		</div>
-	</body>
+                </div>
+                <div class="web">
+                    <div class="skill-content-title">Web</div>
+                </div>
+                <div class="web-icons skill-content-icons">
+                    <div class="icon-container">
+                        <img src="images/icons/icon-html.png" alt="HTML5" />
+                        <div class="icon-title">HTML</div>
+                    </div>
+                    <div class="icon-container">
+                        <img src="images/icons/icon-css.png" alt="CSS3" />
+                        <div class="icon-title">CSS</div>
+                    </div>
+                    <div class="icon-container">
+                        <img src="images/icons/icon-react.png" alt="React" />
+                        <div class="icon-title">React</div>
+                    </div>
+                    <div class="icon-container">
+                        <img src="images/icons/icon-jquery.png" alt="jQuery" />
+                        <div class="icon-title">jQuery</div>
+                    </div>
+                </div>
+                <div class="other">
+                    <div class="skill-content-title">Other</div>
+                </div>
+                <div class="other-icons skill-content-icons">
+                    <div class="icon-container">
+                        <img src="images/icons/icon-node.png" alt="Node" />
+                        <div class="icon-title">Node</div>
+                    </div>
+                    <div class="icon-container">
+                        <img src="images/icons/icon-mysql.png" alt="MySQL" />
+                        <div class="icon-title">MySQL</div>
+                    </div>
+                    <div class="icon-container">
+                        <img
+                            src="images/icons/icon-mongodb.png"
+                            alt="MongoDB"
+                        />
+                        <div class="icon-title">MongoDB</div>
+                    </div>
+                    <div class="icon-container">
+                        <img src="images/icons/icon-git.png" alt="Git" />
+                        <div class="icon-title">Git</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cv" class="section">
+            <div class="content-title">
+                Curriculum Vitae
+            </div>
+            <div class="cv-content-container">
+                <div class="job-container">
+                    <div class="job-description left"></div>
+                    <div class="job-description right">
+                        <div class="job-period">
+                            <span class="period-marker"></span>2020-present
+                        </div>
+                        <div class="job-title">Back-end developer</div>
+                        <div class="job-company">Peleman Industries NV</div>
+                    </div>
+                </div>
+                <div class="job-container">
+                    <div class="job-description left">
+                        <div class="job-period">
+                            2019<span class="period-marker"></span>
+                        </div>
+                        <div class="job-title">Sotware developer</div>
+                        <div class="job-company">AML BVBA</div>
+                    </div>
+                    <div class="job-description right"></div>
+                </div>
+                <div class="job-container">
+                    <div class="job-description left"></div>
+                    <div class="job-description right">
+                        <div class="job-period">
+                            <span class="period-marker"></span>2018-2019
+                        </div>
+                        <div class="job-title">PHP developer</div>
+                        <div class="job-company">Tactics BVBA</div>
+                    </div>
+                </div>
+                <div class="job-container">
+                    <div class="job-description left">
+                        <div class="job-period">
+                            2013-2016
+                            <span class="period-marker"></span>
+                        </div>
+                        <div class="job-title">Accountant</div>
+                        <div class="job-company">Lab Support NV</div>
+                    </div>
+                    <div class="job-description right"></div>
+                </div>
+                <div class="job-container">
+                    <div class="job-description left"></div>
+                    <div class="job-description right">
+                        <div class="job-period">
+                            <span class="period-marker"></span>2013
+                        </div>
+                        <div class="job-title">Accountant agent desk</div>
+                        <div class="job-company">
+                            Seatrade Reefer Chartering NV
+                        </div>
+                    </div>
+                </div>
+                <div class="job-container">
+                    <div class="job-description left">
+                        <div class="job-period">
+                            2010-2013
+                            <span class="period-marker"></span>
+                        </div>
+                        <div class="job-title">Intercompany accountant</div>
+                        <div class="job-company">Kerry Logistics BVBA</div>
+                    </div>
+                    <div class="job-description right"></div>
+                </div>
+                <div class="job-container">
+                    <div class="job-description left"></div>
+                    <div class="job-description right">
+                        <div class="job-period">
+                            <span class="period-marker"></span>2007-2010
+                        </div>
+                        <div class="job-title">Accountant</div>
+                        <div class="job-company">TE Group NV</div>
+                    </div>
+                </div>
+                <div class="job-container">
+                    <div class="job-description left">
+                        <div class="job-period">
+                            2007
+                            <span class="period-marker"></span>
+                        </div>
+                        <div class="job-title">Accountant</div>
+                        <div class="job-company">
+                            Veolia Environmental Services Treatment NV
+                        </div>
+                    </div>
+                    <div class="job-description right"></div>
+                </div>
+                <div class="job-container">
+                    <div class="job-description left"></div>
+                    <div class="job-description right">
+                        <div class="job-period">
+                            <span class="period-marker"></span>2007
+                        </div>
+                        <div class="job-title">Accountant</div>
+                        <div class="job-company">Göbel & Partner BVBA</div>
+                    </div>
+                </div>
+                <div class="job-container">
+                    <div class="job-description left">
+                        <div class="job-period">
+                            2003-2007
+                            <span class="period-marker"></span>
+                        </div>
+                        <div class="job-title">Accounts Payable clerk</div>
+                        <div class="job-company">
+                            SGS Coordination Center NV
+                        </div>
+                    </div>
+                    <div class="job-description right"></div>
+                </div>
+                <div class="job-container">
+                    <div class="job-description left"></div>
+                    <div class="job-description right">
+                        <div class="job-period">
+                            <span class="period-marker"></span>2001-2002
+                        </div>
+                        <div class="job-title">Administrative clerk</div>
+                        <div class="job-company">Fidea NV</div>
+                    </div>
+                </div>
+                <div class="job-container">
+                    <div class="job-description left">
+                        <div class="job-period">
+                            1999-2001
+                            <span class="period-marker"></span>
+                        </div>
+                        <div class="job-title">Administrative clerk</div>
+                        <div class="job-company">Compumark NV</div>
+                    </div>
+                    <div class="job-description right"></div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="section">
+            <div class="content-title">Contact me</div>
+            <div class="link-container">
+                <div class="link">
+                    <a
+                        href="mailto:jason.goossens@gmail.com?subject=Mail from jasongoossens.be"
+                    >
+                        <div class="link-icon">
+                            <img
+                                src="images/icons/email.png"
+                                alt="Email"
+                                title="Email me"
+                            />
+                        </div>
+                    </a>
+                    <a
+                        class="underline-link-black"
+                        href="mailto:jason.goossens@gmail.com?subject=Mail from jasongoossens.be"
+                        >Email</a
+                    >
+                </div>
+                <div class="link">
+                    <a href="https://github.com/jasongoossens" target="_blank">
+                        <div class="link-icon">
+                            <img
+                                src="images/icons/github.png"
+                                alt="Github"
+                                title="Visit my github page"
+                            />
+                        </div>
+                    </a>
+                    <a
+                        class="underline-link-black"
+                        href="https://github.com/jasongoossens"
+                        target="_blank"
+                        >Github</a
+                    >
+                </div>
+                <div class="link">
+                    <a
+                        href="https://www.linkedin.com/in/jason-goossens/"
+                        target="_blank"
+                    >
+                        <div class="link-icon">
+                            <img
+                                src="images/icons/linkedin.png"
+                                alt="LinkedIn"
+                                title="LinkedIn"
+                            />
+                        </div>
+                    </a>
+                    <a
+                        class="underline-link-black"
+                        href="https://www.linkedin.com/in/jason-goossens/"
+                        target="_blank"
+                        >LinkedIn</a
+                    >
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
