@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weekplanner</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <script type="text/javascript" src="js/app.js" defer></script>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="content-container">
+                <div class="column meals-container">
+                    <h1>
+                        Dagplanning
+                        <div class="day-btn-container">
+                            <span>+ begin</span><span>+ einde</span>
+                        </div>
+                    </h1>
+                    <div class="content meals">
+                        <div class="day-input">
+                            <label for="meal-ma">Maandag</label>
+                            <input id="meal-ma" type="text" />
+                        </div>
+                        <div class="day-input">
+                            <label for="meal-di">Dinsdag</label>
+                            <input id="meal-di" type="text" />
+                        </div>
+                        <div class="day-input">
+                            <label for="meal-wo">Woensdag</label>
+                            <input id="meal-wo" type="text" />
+                        </div>
+                        <div class="day-input">
+                            <label for="meal-do">Donderdag</label>
+                            <input id="meal-do" type="text" />
+                        </div>
+                        <div class="day-input">
+                            <label for="meal-vr">Vrijdag</label>
+                            <input id="meal-vr" type="text" />
+                        </div>
+                        <div class="day-input">
+                            <label for="meal-za">Zaterdag</label>
+                            <input id="meal-za" type="text" />
+                        </div>
+                        <div class="day-input">
+                            <label for="meal-zo">Zondag</label>
+                            <input
+                                id="meal-zo"
+                                type="text"
+                                value="Frieten / Kipgerecht"
+                            />
+                        </div>
+                    </div>
+
+                    <h1>Recepten</h1>
+                    <div class="content recipes">
+                        <div class="day-input">
+                            <label for="recipe-ma">Maandag</label>
+                            <input id="recipe-ma" type="text" />
+                        </div>
+                        <div class="day-input">
+                            <label for="recipe-di">Dinsdag</label>
+                            <input id="recipe-di" type="text" />
+                        </div>
+                        <div class="day-input">
+                            <label for="recipe-wo">Woensdag</label>
+                            <input id="recipe-wo" type="text" />
+                        </div>
+                        <div class="day-input">
+                            <label for="recipe-do">Donderdag</label>
+                            <input id="recipe-do" type="text" />
+                        </div>
+                        <div class="day-input">
+                            <label for="recipe-vr">Vrijdag</label>
+                            <input id="recipe-vr" type="text" />
+                        </div>
+                        <div class="day-input">
+                            <label for="recipe-za">Zaterdag</label>
+                            <input id="recipe-za" type="text" />
+                        </div>
+                        <div class="day-input">
+                            <label for="recipe-zo">Zondag</label>
+                            <input id="recipe-zo" type="text" />
+                        </div>
+                    </div>
+                </div>
+                <div class="column groceries-container">
+                    <h1>Boodschappenlijst</h1>
+                    <label for="main-groceries"
+                        ><h3>Boodschappenlijst</h3>
+                    </label>
+                    <textarea
+                        id="main-groceries"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                    <label for="other-groceries"
+                        ><h3>Andere winkels</h3>
+                    </label>
+                    <textarea
+                        id="other-groceries"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                    <label for="later-groceries"><h3>Later</h3> </label>
+                    <textarea id="later-groceries"></textarea>
+                </div>
+            </div>
+            <div class="process-container">Maak lijst</div>
+        </div>
+        <div class="modal">
+            <div class="modal-title-container">
+                <h3>Kopieer naar WhatsApp</h3>
+                <span class="close-modal-btn">X</span>
+            </div>
+            <hr />
+            <div class="modal-content-container">
+                <div class="planning">
+                    <h4 class="content-header">
+                        Gerechten<span class="copy-btn">Klembord</span>
+                    </h4>
+                    <hr />
+                    <div class="content-meals"></div>
+                    <h4 class="content-header">
+                        Recepten<span class="copy-btn">Klembord</span>
+                    </h4>
+                    <hr />
+                    <div class="content-recipes"></div>
+                </div>
+                <div class="lists">
+                    <h4 class="content-header">
+                        Boodschappenlijst<span class="copy-btn">Klembord</span>
+                    </h4>
+                    <hr />
+                    <div class="content-shopping"></div>
+                    <h4 class="content-header">
+                        Andere winkels<span class="copy-btn">Klembord</span>
+                    </h4>
+                    <hr />
+                    <div class="content-other"></div>
+                    <h4 class="content-header">
+                        Later in de week<span class="copy-btn">Klembord</span>
+                    </h4>
+                    <hr />
+                    <div class="content-later"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

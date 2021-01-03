@@ -1,0 +1,220 @@
+:root {
+    --primary-font-size: 1em;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: filter 500ms;
+}
+
+.content-container {
+    display: flex;
+    /* padding: 2px; */
+    height: 90vh;
+}
+
+.process-container {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(17, 138, 17);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: calc(var(--primary-font-size) * 1.75);
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 200ms, color 200ms;
+}
+
+.process-container:hover {
+    background-color: rgb(87, 187, 87);
+    color: black;
+}
+
+.column {
+    width: 50%;
+}
+.meals-container {
+    overflow-y: scroll;
+}
+
+.groceries-container {
+    height: 100%;
+}
+
+.column h1,
+.column h3 {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(84, 189, 84);
+    color: white;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px 5px 2px 10px;
+}
+
+.day-btn-container span {
+    display: inline-block;
+    background-color: rgb(51, 119, 51);
+    font-size: calc(var(--primary-font-size) * 0.75);
+    margin-left: 5px;
+    padding: 0 15px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 200ms;
+}
+
+.day-btn-container span:hover {
+    background-color: rgb(94, 209, 94);
+    color: black;
+}
+
+.day-btn-container span:active {
+    background-color: rgb(106, 168, 106);
+}
+
+.day-input {
+    margin: 10px 0;
+    position: relative;
+}
+
+.content .day-input label {
+    display: inline-block;
+    width: 10ch;
+    text-align: right;
+    font-size: var(--primary-font-size);
+}
+
+.content .day-input input[type='text'] {
+    width: calc(95% - 10ch);
+    font-size: var(--primary-font-size);
+}
+
+.groceries-container textarea {
+    margin: 0 2px;
+    width: 99%;
+    height: 40%;
+}
+
+#later-groceries,
+#other-groceries {
+    height: 12%;
+}
+
+.delete-btn {
+    background-color: rgb(218, 27, 27);
+    color: white;
+    border-radius: 1px;
+    padding: 2px 8px 3px 8px;
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    user-select: none;
+}
+
+.delete-btn:hover {
+    background-color: rgb(243, 71, 71);
+}
+
+.modal {
+    position: absolute;
+    top: 5vh;
+    left: 20vw;
+    width: 60vw;
+    height: 70vh;
+    border: 8px solid black;
+    background-color: white;
+    padding: 5px 15px;
+    display: none;
+}
+
+.modal h3 {
+    margin: 5px 0px;
+}
+
+.modal-title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal .modal-content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'planning lists';
+    grid-gap: 20px;
+}
+
+.close-modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-weight: 500;
+    width: 3ch;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.close-modal-btn:hover {
+    font-weight: 700;
+    border: 3px solid black;
+}
+
+.disabled {
+    filter: blur(3px);
+    user-select: none;
+    pointer-events: none;
+}
+
+.planning {
+    grid-area: planning;
+}
+
+.lists {
+    grid-area: lists;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.content-header span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 3px 5px;
+    font-weight: 500;
+    cursor: pointer;
+    box-sizing: border-box;
+    user-select: none;
+}
+.content-header span:hover {
+    font-weight: 700;
+    padding: 2px 4px;
+    border: 3px solid black;
+}
+
+.modal-content-container div div {
+    font-family: 'Courier New', Courier, monospace;
+}
