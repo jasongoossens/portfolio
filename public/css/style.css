@@ -11,8 +11,7 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: red;
-  /* background: #73a5c6; */
+  background: #73a5c6;
   border: 2px solid black;
   z-index: 1000;
 }
