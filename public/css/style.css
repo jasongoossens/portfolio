@@ -18,7 +18,7 @@
 
 *::-webkit-scrollbar-thumb {
   background-color: #73a5c6;
-  border: 2px solid #1e3f66;
+  border: 2px solid red;
 }
 
 * {
